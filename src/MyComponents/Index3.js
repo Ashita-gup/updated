@@ -1,10 +1,10 @@
 import React from 'react';
-//import './index3.css';
+import styles from './index3.css';
 export default function Index3(){
     return (
     <div class="front-side">
         <div class="side-bar">
-            <img src="./images/forgot.jpg" align="left" class="side-img" height="100%" width="100%"></img>
+            <img src="forgot.jpg" align="left" class="side-img" height="100%" width="100%"></img>
         </div>
         <div class="main-sec">
         <h2 class="main-head">Forgot Password? </h2>

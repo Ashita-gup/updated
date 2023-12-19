@@ -1,10 +1,10 @@
 import React from 'react';
-import './index2.css';
+import styles from './index2.css';
 export default function Index2(){
     return (
     <div class="front-side">
         <div class="side-bar">
-            <img src="./images/tr.webp" align="left" class="side-img" height="98%" width="100%"></img>
+            <img src="tr.webp" align="left" class="side-img" height="98%" width="100%"></img>
         </div>
         <div class="main-sec">
         <h2 class="main-head">Adventure starts here </h2><p class="ro">&#128640;</p>

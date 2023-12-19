@@ -3,20 +3,23 @@ import React, { useState } from 'react';
 import { auth } from '../firebase'; 
 import './Login.css';
 import { Link, BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Index2 from './Index2';
 import Index3 from './Index3';
+import Landing from './Landing';
 export default function Login(){
+    
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-
+    const navigate = useNavigate();
     const handleLogin = async () => {
-        try {
-            await firebase.auth().signInWithEmailAndPassword(email, password);
-            console.log('Login successful');
-      // You can redirect the user or perform other actions on successful login
-    } catch (error) {
-        console.error('Login failed', error.message);
-      // You can provide user feedback on login failure here
+      if (!email) {
+        alert('Please enter your email.');
+      }else if(!password){
+        alert('Please enter your password.')
+      }else {
+        console.log('Login successful');
+        navigate('/landing');
     }
   };
     return (
@@ -39,12 +42,13 @@ export default function Login(){
         <h2 class="hr-lines">OR</h2>
         <i class="fa fa-google circle"></i>
         
-        
-        </div>
         <Routes>
-          <Route path="/about" element={<Index2 />} />
-          <Route path="/contact" element={<Index3 />} />
+          <Route path="/about" element={<Index3 />} />
+          <Route path="/contact" element={<Index2 />} />
+          <Route path="/landing" element={<Landing />} />
         </Routes>
+        </div>
+       
     </div>
     )
     }

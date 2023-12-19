@@ -1,0 +1,100 @@
+.social-icons{
+	padding:30px;
+	background-color:#00506b;
+  text-align: center;
+}
+.social-icons a{
+	color:#fff;
+  line-height:30px;
+  font-size:30px;
+  margin: 0 5px;
+  text-decoration:none;
+  
+}
+.social-icons a i{
+	line-height:30px;
+  font-size:30px;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1); 
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1); 
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1);
+  transition: all 200ms ease-in;
+  transform: scale(1);
+}
+.social-icons a:hover i{
+  box-shadow: 0px 0px 150px #000000;
+  z-index: 2;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1.5);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1.5);   
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1.5);
+  transition: all 200ms ease-in;
+  transform: scale(1.5);
+}
+.fro-area{
+    height: 150px;
+    width: 400px;
+    margin-left: 450px;
+    margin-top: 40px;
+    display: block;
+    background-color: #2E2252;
+    border-width: 0px;
+    border-radius: 5px;
+    color: white;
+}
+.valu{
+    margin-top: 40px;
+    display: block;
+    margin-left: 620px;
+}
+.fin{
+    height: 100px;
+    width: 670px;
+    margin-left: 300px;
+    margin-top: 30px;
+    background-color: #2E2252;
+    border-width: 0px;
+    border-radius: 5px;
+    color: white;
+}
+nav{
+    font-style: 'Bungee';
+}
+body{
+	background-image: url("../images/set_1.png");
+}
+#car{
+    margin-right: 600px;
+}
+#ki{
+    margin-left: 70px;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+#fd{
+    margin-right: 20px;
+}
+#hello{
+    margin-left: 60px;
+    height: 150px;
+    width: 400px;
+    margin-top: 60px;
+    margin-right: 190px;
+}
+.progress-bar-container{
+    width: 400px;
+    margin-top: 50px;
+    margin-left: 60px;
+}
+#sco{
+    width: 75px;
+}
+#scop{
+    width: 80px;
+    margin-left: 700px;
+    margin-bottom: 40px;
+}
